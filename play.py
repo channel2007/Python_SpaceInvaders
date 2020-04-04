@@ -193,10 +193,13 @@ def add1Up():
 pygame.init()
 # 顯示Title.
 pygame.display.set_caption(u"太空侵略者")
-# 建立畫佈大小.
+# 建立畫佈大小(視窗模式).
 canvas = pygame.display.set_mode((canvas_width, canvas_height))
+# 建立畫佈大小(全螢幕模式).
+#canvas = pygame.display.set_mode((canvas_width, canvas_height), pygame.DOUBLEBUF and pygame.FULLSCREEN )
 # 時脈.
 clock = pygame.time.Clock()
+
 
 # 設定字型.
 #font = pygame.font.SysFont(pygame.font.match_font('bitstreamverasans'), 24)
